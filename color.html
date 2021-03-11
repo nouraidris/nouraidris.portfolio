@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Color Photography</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -11,11 +11,27 @@ body,h1 {font-family: "Raleway", Arial, sans-serif}
 h1 {letter-spacing: 6px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
-<body>
+<body class="w3-white w3-content" style="max-width:2000px">
+  <!-- !PAGE CONTENT! -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="Portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-camera"></i> PHOTOGRAPHY</a>
+    <a href="projects.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-
+  </div>
+</div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="Portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTOGRAPHY</a>
+    <a href="projects.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    
+  </div>
 <!-- Header -->
 <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
   <h1 class="w3-xlarge">MY</h1>
@@ -23,55 +39,81 @@ h1 {letter-spacing: 6px}
   
   <div class="w3-padding-32">
     <div class="w3-bar w3-border">
-        <a href="index.html" class="w3-bar-item w3-button">Home</a>
       <a href="Portfolio.html" class="w3-bar-item w3-button">Black&White</a>
       <a href="color.html" class="w3-bar-item w3-button w3-light-grey">Color</a>
     
     </div>
   </div>
 </header>
-
 <!-- Photo Grid -->
 <div class="w3-row-padding w3-" style="margin-bottom:128px">
   <div class="w3-half">
-    <img src="75.jpg" style="width:100%">
-    <img src="landscape mode/IMG_8730.jpg" style="width:100%">
-    <img src="IMG_7475.PNG" style="width:100%">
-    <img src="landscape mode/22.jpg" style="width:100%">
-    <img src="bridge.jpg" style="width:100%">
-    <img src="landscape mode/6.jpg" style="width:100%">
-    <img src="landscape mode/sanfran.jpg" style="width:100%">
+    <img src="images/75.jpg" style="width:100%" onclick="onClick(this)">
+    <img src="images/IMG_8730.jpg" style="width:100%">
+    <img src="images/IMG_7475.PNG" style="width:100%">
+    <img src="images/22.jpg" style="width:100%">
+    <img src="images/bridge.jpg" style="width:100%">
+    <img src="images/6.jpg" style="width:100%">
+    <img src="images/sanfran.jpg" style="width:100%">
+    <img src="images/splash.jpg" style="width:100%">
    
- 
   
   </div>
 
   <div class="w3-half">
-    <img src="111.JPG" style="width:100%">
-    <img src="76.jpg" style="width:100%">
-    <img src="albumtemp.JPG" style="width:100%">
-    <img src="landscape mode/00.jpg" style="width:100%">
-    <img src="IMG_4014 (1).JPG" style="width:100%">
-    <img src="477.jpg" style="width:100%">
+    <img src="images/111.JPG" style="width:100%">
+    <img src="images/76.jpg" style="width:100%">
+    <img src="images/albumtemp.JPG" style="width:100%">
+    <img src="images/00.jpg" style="width:100%">
+    <img src="images/IMG_4014 (1).JPG" style="width:100%">
+    <img src="images/477.jpg" style="width:100%">
     
-   
+
     
   </div>
 </div>
+    </div>
+  </div>
   
 <!-- End Page Content -->
 </div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/profile.php?id=100005012924741"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href= "https://www.instagram.com/fotografiiiiii/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.snapchat.com/add/nunidris"><i class="fa fa-snapchat w3-hover-opacity"></i></a> 
+ 
 </footer>
-
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
 </body>
 </html>
