@@ -4,14 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, sans-serif;}
 body, html {
   height: 100%;
-  color: rgb(92, 89, 89);
+  color: rgb(0, 0, 0);
   line-height: 1.8;
+}
+}
+a:link {
+
+text-decoration: none;
+}
+
+a:visited {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: none;
+}
+
+a:active {
+text-decoration: none;
 }
 
 /* Create a Parallax Effect */
@@ -26,18 +44,6 @@ body, html {
 .bgimg-1 {
   background-image: url('images/finalwall.jpg');
   min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 700px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 700px;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -61,21 +67,20 @@ body, html {
     </a>
     <a href="index.html" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> STATEMENT</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="Portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-camera"></i> PHOTOGRAPHY</a>
-    <a href="projects.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="portfolio1.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
   
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-  
     </a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">STATEMENT</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="Portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTOGRAPHY</a>
-    <a href="projects.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="portfolio1.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
    
   </div>
 </div>
@@ -91,49 +96,18 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">STATEMENT</h3>
   <p class="w3-center"><em>I love everything art!</em></p>
-  <p>Welcome to my website! I am majoring in Digital Media Art and minoring in Photography. I have been practicing photography for 6 years now. I specialize in landscape, architectural, and portrait photography. I specifically aim to capture unique moments, to truly reveal the essence and beauty of the person or object in front of me. Alongside my photography, I use various applications such as photoshop, illustrator, and InDesign to further enhance my images.
-    I am very passionate about creating aesthetically pleasing projects which have inclined my passion for web development and Design. This website encapsulates my work, from my very first Html website to my award-winning photographs.</p>
+  <p>Welcome to my website! My name is Noura Idris. I'm Eritrean (East African) and I was born and raised in Saudi Arabia.   I moved to the United States in 2012, currently living and residing in San Jose, California.Growing up I never dreamed of the things I have accomplished today, such as continuing my education and being independent. Being an immigrant in America I have had to work extremely hard to fight the odds that were against me. Even on a smaller scale of pursuing a path other than what my parents have designed for me. Art is my passion and Digital Media is my voice.  
+     </p>  My passion for Digital Media started with photography. I have been practicing photography for six years now. Through editing my pictures and creating digital collages I have stumbled upon the world of Digital Media. I  have enjoyed expressing myself through creating fantasy collages and experimenting with video. However, Digital Media has opened a vast new world for me, allowing me to express myself far beyond measures. It allowed me to create pieces that are interactive and engaging.  Creating videos, illustrations and, 3D figures has allowed me to express deeper and more complex topics in sophisticated ways.  A Lot of my projects are cultural and socio-political. I would describe my art as being Digitally focused and provoking at times.  I use software such as Photoshop, Illustrator, After Effects, and Premiere to make these works possible. I enjoy discovering new mediums and challenging myself. A recent work that I believe embodies that is a project I created called "Infect". I used different mediums and tools such as woodworking, soldering, and code programming to create a mixed media interactive installation. "Infect" is derived from the pandemic and the idea of metastasizing. This project resembles more than just the spread of the virus. It explores the concept of surrounding energies and influences.  I believe that the habits and attitudes of those around us transfer and form who we become. Infect was a new approach for me. I had to learn new mediums and solve problems that occurred along the way. I successfully created an interactive wooden board that consists of the word “infect” with bulbs that sequentially light up in the presence of an object within 2 feet which was made possible by adding a sensor to detect proximity. This project was an example of challenging myself and experimenting with mixed media. I’m proud of the progress I have made and I'm eager to learn more and further refine the artist in me. I want to create thought-provoking art, discuss topics that are considered controversial, and deal with the issues there are using art.   </p>
   <div class="w3-row">
     <br>
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Who am I?</b></p><br>
-      <img src="images/thisisme.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-64">
-      <p>My name is Noura Idris. I'm Eritrean (East African) and I was born and raised in Saudi Arabia. I moved to the United States in 2012, currently living and residing in San Jose, California. I love expressing myself through my photography and artwork. Alot of my projects are cultural and socio-political.I would describe my art as being Digitally focused, mainly black and white and provoking at times.
-      I enjoy discovering new Mediums and challenging my self.  </p>
+    <div class="w3-col m3 w3-hide-small w3-padding-64">
+  
+
     </div>
 </div>
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
 
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">CONTACT INFORMATION</h3>
-    <div class="w3-center m5 w3-panel">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> San Jose, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone:(669)222-9253<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: nouraamohd@gmail.com<br>
-      </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/profile.php?id=100005012924741"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href= "https://www.instagram.com/fotografiiiiii/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.snapchat.com/add/nunidris"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-  </div>
- 
-</footer>
- 
 <script>
 // Modal Image Gallery
 function onClick(element) {
