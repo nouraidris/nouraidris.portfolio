@@ -8,169 +8,167 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, html {
-  height: 100%;
-  color: rgb(0, 0, 0);
-  line-height: 1.8;
-  font-family:"Raleway", Arial, sans-serif;
-  
-}
-
-a:link {
-
-text-decoration: none;
-}
-
-a:visited {
-text-decoration: none;
-}
-
-a:hover {
-text-decoration: none;
-}
-
-a:active {
-text-decoration: none;
-}
-
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/w3images/coffeehouse.jpg");
-  min-height: 75%;
-}
-
-.menu {
-  display: none;
-}
+    body,
+    html {
+        height: 100%;
+        color: rgb(0, 0, 0);
+        line-height: 1.8;
+        font-family: "Raleway", Arial, sans-serif;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    a:active {
+        text-decoration: none;
+    }
+    
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/w3images/coffeehouse.jpg");
+        min-height: 75%;
+    }
+    
+    .menu {
+        display: none;
+    }
 </style>
+
 <body>
 
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> STATEMENT</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="Portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-camera"></i> PHOTOGRAPHY</a>
-    <a href="portfolio1.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-  
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-  
-    </a>
-  </div>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> BIO</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="Portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-camera"></i> PHOTOGRAPHY</a>
+            <a href="portfolio1.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">STATEMENT</a>
-    <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="Portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTOGRAPHY</a>
-    <a href="portfolio1.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-   
-  </div>
-</div>
-<br>
-<br>
-<style
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
 
-}
-w3-center></style>
-<p style="text-align:center;">
-<img src="images/collage.jpg" style="width:50%;max-width:1000px" class="w3-center w3-padding-64">
+            </a>
+        </div>
 
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">BIO</a>
+            <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="Portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTOGRAPHY</a>
+            <a href="portfolio1.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
 
-<p style ="text-align:center"><strong>Untitled(2017)</strong></p>
-<p style="text-align: center;">Digital fantasy collage</p>
-</div>
-</div>
-
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
-
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Description</span></h5>
-    <p>I created this digital collage of my sister by adding various images, layer masks and maipulating the opacity. I used her face as a base and added the forest and tree branches to give the image a certain mood. I changed the vibrance to black and white to give it a sense of mysterity and darkness. I like to create fantasy collages to emphasize a certain feeling or asthetic.</p>
-      <p><i></i></p>
-      <p></p>
+        </div>
     </div>
-  </div>
-</div>
+    <br>
+    <br>
+    <style img { display: block; margin-left: auto; margin-right: auto; } w3-center></style>
+    <p style="text-align:center;">
+        <img src="images/collage.jpg" style="width:50%;max-width:1000px" class="w3-center w3-padding-64">
 
-<!-- Menu Container -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Application used</span></h5>
-  
-    <div class="w3-center">
 
-    <img src="images/images.png" style="width:20%">
-      </a>
-  
-</div>
-<!-- End page content -->
-</div>
+        <p style="text-align:center"><strong>Untitled(2017)</strong></p>
+        <p style="text-align: center;">Digital fantasy collage</p>
+        </div>
+        </div>
 
-<!-- Footer -->
-<footer class="w3-center w3-light-white w3-padding-48 w3-large"></footer>
-</footer>
+        <!-- Add a background color and large text to the whole page -->
+        <div class="w3-sand w3-grayscale w3-large">
 
-<script>  
-  // Modal Image Gallery
-  function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
-  }
-  
-  // Change style of navbar on scroll
-  window.onscroll = function() {myFunction()};
-  function myFunction() {
-      var navbar = document.getElementById("myNavbar");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-      } else {
-          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-      }
-  }
-  
-  // Used to toggle the menu on small screens when clicking on the menu button
-  function toggleFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-      } else {
-          x.className = x.className.replace(" w3-show", "");
-      }
-  }
-  
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
+            <!-- About Container -->
+            <div class="w3-container" id="about">
+                <div class="w3-content" style="max-width:700px">
+                    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Description</span></h5>
+                    <p>I created this digital collage of my sister by adding various images, layer masks and maipulating the opacity. I used her face as a base and added the forest and tree branches to give the image a certain mood. I changed the vibrance
+                        to black and white to give it a sense of mysterity and darkness. I like to create fantasy collages to emphasize a certain feeling or asthetic.</p>
+                    <p><i></i></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="menu">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Application used</span></h5>
+
+                <div class="w3-center">
+
+                    <img src="images/images.png" style="width:20%">
+                    </a>
+
+                </div>
+                <!-- End page content -->
+            </div>
+
+            <!-- Footer -->
+            <footer class="w3-center w3-light-white w3-padding-48 w3-large"></footer>
+            </footer>
+
+            <script>
+                // Modal Image Gallery
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
+
+                // Change style of navbar on scroll
+                window.onscroll = function() {
+                    myFunction()
+                };
+
+                function myFunction() {
+                    var navbar = document.getElementById("myNavbar");
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+                    } else {
+                        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                    }
+                }
+
+                // Used to toggle the menu on small screens when clicking on the menu button
+                function toggleFunction() {
+                    var x = document.getElementById("navDemo");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+
+                // Tabbed Menu
+                function openMenu(evt, menuName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("menu");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+                    }
+                    document.getElementById(menuName).style.display = "block";
+                    evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+                }
+                document.getElementById("myLink").click();
+            </script>
 
 </body>
+
 </html>
