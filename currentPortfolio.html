@@ -91,6 +91,7 @@
             <style>
                 a {
                     color: inherit;
+                    padding-left: 165px;
                 }
             </style>
             <div class="container-fluid bg-3 text-center">
@@ -104,8 +105,12 @@
                         <br>
                         <br>
 
+
                         <a href="solitude.html"><img src="images/solitudesign copy.jpg" class="w3-hover-opacity" style="width:100%" height="280" alt="Image">
-                            <p>Interactive coding Project</p>
+                            <a style="text-align: right;">
+                                <p>Interactive coding</p>
+                            </a>
+
                     </div>
 
                     <div class="col-sm-3">
@@ -116,29 +121,31 @@
                         <br>
 
                         <a href="Monkeyrun.html"><img src="images/frontfacer3.png" class="w3-hover-opacity" style="width:100%" height="280" alt="Image">
-                            <p>2D Platfrom Programmed Game</p>
+                            <a style="text-align: end;">
+                                <p>Programmed Game</p>
+                            </a>
                     </div>
 
-                    <div class="col-sm-3">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-
-                        <a href="Vanemail.html"><img src="images/VanGoghcover.png" class="w3-hover-opacity" style="width:100%" height="280" alt="Image">
-                            <p>HTML Interactive Email</p>
-                    </div>
-                    <div class="col-sm-3">
+                    <div class=" col-sm-3 ">
                         <br>
                         <br>
                         <br>
                         <br>
                         <br>
 
-                        <a href="HardwareBot.html"><img src="images/RaspPico.jpg" class="w3-hover-opacity" style="width:100%" height="280" alt="Image">
-                            <p>Hardware wiring/soldering</p>
+                        <a href="Vanemail.html "><img src="images/VanGoghcover.png " class="w3-hover-opacity " style="width:100% " height="280 " alt="Image ">
+                            <a style="text-align: right; ">
+                                <p>Interactive Email</p>
+                            </a>
+
+                        </a>
                     </div>
+                    <div class="col-sm-3 "></div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </div>
 
             </div><br><br>
@@ -170,21 +177,21 @@
     };
 
     function myFunction() {
-        var navbar = document.getElementById("myNavbar");
+        var navbar = document.getElementById("myNavbar ");
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            navbar.className = "w3-bar " + " w3-card " + " w3-animate-top " + " w3-white ";
         } else {
-            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white ", " ");
         }
     }
 
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
+        var x = document.getElementById("navDemo ");
+        if (x.className.indexOf("w3-show ") == -1) {
+            x.className += " w3-show ";
         } else {
-            x.className = x.className.replace(" w3-show", "");
+            x.className = x.className.replace(" w3-show ", " ");
         }
     }
 </script>
